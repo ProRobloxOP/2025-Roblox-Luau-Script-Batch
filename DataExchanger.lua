@@ -1,3 +1,8 @@
+--> Description: A tool API that allows Roblox events to function as Roblox (Remote & Bindable) Functions.
+--> Unlike Roblox's remote/bindable functions, there is minimal error from lag as Remote / Bindable events are fired.
+--> Like the Event_Handler API, this script uses the tool "Table Editor" to optionally compress arguments; reducing recv from server-client.
+--> This script utilizes Http Service for "Job Ids" to correctly return values. RunService.Heartbeat is used to yield until a return value exist.
+
 --> Services <--
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local HttpService = game:GetService("HttpService")
